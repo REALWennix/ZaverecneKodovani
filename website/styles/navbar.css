@@ -1,7 +1,15 @@
+:root {
+  --navbar-padding: 20px;
+  --navbar-width: 80%;
+  --navbar-background: rgba(11, 22, 40, 0.89);
+  --navbar-text-color: white;
+  --transition-duration: 0.3s;
+}
+
 /* Navbar styles */
 .navbar {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: var(--navbar-padding);
+  margin-right: var(--navbar-padding);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,17 +23,17 @@
 
 .navbar ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: var(--navbar-padding);
 }
 
 .navbar ul li a {
   text-decoration: none;
-  color: white;
+  color: var(--navbar-text-color);
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   display: inline-block;
   padding: 20px 10px;
-  transition: font-size 0.3s ease;
+  transition: font-size var(--transition-duration) ease;
 }
 
 .navbar ul li a:hover {
@@ -70,18 +78,19 @@
 
 @media screen and (max-width: 700px) {
   .navbar {
-    background-color: rgb(11, 22, 40, 0.89);
+    background-color: var(--navbar-background);
     display: none;
     flex-direction: column;
     position: absolute;
     top: 110px;
     left: 0;
-    padding: 20px;
+    padding: var(--navbar-padding);
     margin-left: 0px;
     box-sizing: border-box;
-    transition: transform 0.3s ease, width 0.3s ease;
+    transition: transform var(--transition-duration) ease,
+      width var(--transition-duration) ease;
     transform: translateX(-100%);
-    width: 80%;
+    width: var(--navbar-width);
   }
 
   .navbar.open {

@@ -1,3 +1,13 @@
+:root {
+  --primary-color: #0b1628;
+  --header-padding: 20px;
+  --hamburger-size: 50px;
+  --logo-height: 80px;
+  --logo-margin-right: 20px;
+  --logo-padding-left: 5px;
+  --transition-duration: 0.3s;
+}
+
 /* Header styles */
 .header {
   display: flex;
@@ -5,19 +15,23 @@
   align-items: center;
   width: 100%;
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: var(--header-padding);
   box-sizing: border-box;
-  transition: padding 0.3s ease;
+  transition: padding var(--transition-duration) ease;
+  -webkit-transition: padding var(--transition-duration) ease;
+  -moz-transition: padding var(--transition-duration) ease;
 }
 
 .hamburger {
   display: none;
   color: white;
-  font-size: 50px;
+  font-size: var(--hamburger-size);
   background: none;
   border: none;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform var(--transition-duration) ease;
+  -webkit-transition: transform var(--transition-duration) ease;
+  -moz-transition: transform var(--transition-duration) ease;
 }
 
 .hamburger:hover {
@@ -29,11 +43,12 @@
 }
 
 .logo {
-  height: 80px;
-  margin-right: 20px;
-  padding-left: 5px;
+  height: var(--logo-height);
+  margin-right: var(--logo-margin-right);
+  padding-left: var(--logo-padding-left);
   filter: invert();
-  transition: height 0.3s ease, padding 0.3s ease;
+  transition: height var(--transition-duration) ease,
+    padding var(--transition-duration) ease;
 }
 
 @media screen and (max-width: 1060px) {
