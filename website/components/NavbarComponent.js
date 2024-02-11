@@ -1,7 +1,7 @@
-// components/NavbarComponent.js
 Vue.component('navbar-component', {
+    props: ['isMenuOpen'],
     template: `
-    <nav class="navbar">
+    <nav class="navbar" :class="{ 'open': isMenuOpen }">
       <ul>
         <li><a href="#">PRO UCHAZEČE</a></li>
         <li><a href="#">PRO ŽÁKY A RODIČE</a></li>
