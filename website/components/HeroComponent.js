@@ -15,4 +15,8 @@ Vue.component('hero-component', {
       console.log('Read More clicked');
     }
   }
-}); 
+<<<<<<< HEAD
+});
+=======
+});
+>>>>>>> 9620b351c3d679702cd934ce9345191edf45355e
