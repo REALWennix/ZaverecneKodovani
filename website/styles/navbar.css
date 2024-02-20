@@ -17,6 +17,7 @@
 
 .navbar ul {
   list-style: none;
+  margin-right: px;
   margin: 0;
   padding: 0;
 }
@@ -68,7 +69,7 @@
 
 @media screen and (max-width: 768px) {
   .navbar ul li {
-    margin-right: 0rem;
+    margin-right: 0.1rem;
   }
 
   .navbar ul li a {
@@ -82,10 +83,12 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 110px;
+    top: 105px;
     left: 0;
     padding: var(--navbar-padding);
     margin-left: 0px;
+    width: 90%;
+    padding: 10px;
     box-sizing: border-box;
     transition: transform var(--transition-duration) ease,
       width var(--transition-duration) ease;
@@ -106,17 +109,23 @@
 
   .navbar ul li {
     display: block;
-    margin: 20px 0;
+    margin: 15px 0;
   }
 
   .navbar ul li a {
-    font-size: 1.35rem;
+    font-size: 1rem;
     width: 100%;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0;
   }
 
   .navbar ul li:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar {
+    top: 105px;
   }
 }

@@ -1,0 +1,44 @@
+/* Define styles for the hero component */
+.hero {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 2; /* Adjust the flex value to control the width ratio */
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1; /* Adjust the flex value to control the width ratio */
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.content button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

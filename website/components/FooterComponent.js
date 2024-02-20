@@ -1,6 +1,5 @@
-// components/FooterComponent.js
 Vue.component('footer-component', {
-    template: `
+  template: `
     <footer>
       <p>&copy; 2024 Martin Rosič</p>
     </footer>

@@ -1,7 +1,7 @@
 // app.js
 new Vue({
-    el: '#app',
-    template: `
+  el: '#app',
+  template: `
     <div>
       <header-component></header-component>
       <content-component></content-component>
