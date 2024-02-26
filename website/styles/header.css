@@ -15,7 +15,11 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: var(--primary-color);
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    rgba(1, 20, 60, 0.75)
+  );
   padding: var(--header-padding);
   box-sizing: border-box;
   transition: padding var(--transition-duration) ease;
@@ -55,6 +59,9 @@
 @media screen and (max-width: 1060px) {
   .logo {
     height: 70px;
+  }
+  .header {
+    background: var(--primary-color);
   }
 }
 
