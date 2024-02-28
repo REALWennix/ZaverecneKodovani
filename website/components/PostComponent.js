@@ -32,7 +32,7 @@ Vue.component('post-component', {
                 this.onBack();
             }
         }, readMore() {
-            window.location.href = '/your-new-page';
+            window.location.href = '/page';
         }
     },
 });
