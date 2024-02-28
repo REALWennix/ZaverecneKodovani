@@ -1,3 +1,5 @@
+/* Navbar styles */
+
 :root {
   --navbar-padding: 20px;
   --navbar-width: 80%;
@@ -6,7 +8,6 @@
   --transition-duration: 0.3s;
 }
 
-/* Navbar styles */
 .navbar {
   margin-left: var(--navbar-padding);
   margin-right: var(--navbar-padding);

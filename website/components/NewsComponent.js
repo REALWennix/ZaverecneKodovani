@@ -97,6 +97,7 @@ Vue.component('news-component', {
     methods: {
         readMore() {
             console.log('Read More clicked');
+            window.location.href = 'post.html';
         },
     }, mounted() {
         this.fadeIn = true;

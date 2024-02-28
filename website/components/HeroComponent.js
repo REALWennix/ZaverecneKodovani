@@ -13,6 +13,7 @@ Vue.component('hero-component', {
   methods: {
     readMore() {
       console.log('Read More clicked');
+      window.location.href = 'website/post.html';
     }
   }
 });

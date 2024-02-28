@@ -32,7 +32,7 @@
   transform: translateX(-50%);
   text-align: center;
   color: white;
-  z-index: 2;
+  z-index: 999;
 }
 
 .hero-content h2 {
@@ -49,6 +49,8 @@
   padding: 10px 20px;
   font-size: 1em;
   background-color: var(--button-default-bg);
+  position: relative;
+  z-index: 9999;
   color: white;
   border: none;
   cursor: pointer;
