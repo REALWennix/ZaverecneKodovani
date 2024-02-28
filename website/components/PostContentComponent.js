@@ -6,8 +6,10 @@ Vue.component('content-component', {
         post-title="Výhra v soutěži"
         post-image="/website/imgs/data/Post-1.jpg"
         post-description="Čtveřice studentů vyhrála v soutěži..."
+        post-time="March 1, 2024"
+        post-author="Hana Budská"
+        :on-back="goBackCallback"
       ></post-component>
-      <!-- Add more post-components as needed -->
     </section>
   `,
     style: `
@@ -15,4 +17,9 @@ Vue.component('content-component', {
       position: relative;
     }
   `,
+    methods: {
+        goBackCallback() {
+            console.log('Going back...'); //nemám čas to implementovat
+        },
+    },
 });

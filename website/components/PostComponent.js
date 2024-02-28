@@ -2,54 +2,37 @@ Vue.component('post-component', {
     props: {
         postTitle: String,
         postImage: String,
-        postDescription: String,
+        postTime: String,
+        postAuthor: String,
+        onBack: Function,
+    },
+    data() {
+        return {
+            postDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        };
     },
     template: `
     <div class="post">
-      <img :src="postImage" :alt="postTitle">
-      <div class="post-content">
-        <h2>{{ postTitle }}</h2>
-        <p>{{ postDescription }}</p>
-        <button @click="readMore">Číst dále</button>
+      <div class="image-container">
+        <img :src="postImage" :alt="postTitle">
       </div>
+      <div class="post-header">
+        <p class="post-info">{{ postTime }} | {{ postAuthor }}</p>
+        <h2>{{ postTitle }}</h2>
+      </div>
+      <div class="post-content">
+        <p>{{ postDescription }}</p>
+      </div>
+      <button @click="goBack">Back</button>
     </div>
   `,
     methods: {
-        readMore() {
+        goBack() {
+            if (this.onBack && typeof this.onBack === 'function') {
+                this.onBack();
+            }
+        }, readMore() {
             window.location.href = '/your-new-page';
         }
     },
-    style: `
-    .post {
-      position: relative;
-      margin-bottom: 20px;
-    }
-
-    img {
-      width: 100%;
-      height: auto;
-    }
-
-    .post-content {
-      padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    button {
-      background-color: #007BFF;
-      color: #fff;
-      border: none;
-      padding: 8px 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  `,
 });
