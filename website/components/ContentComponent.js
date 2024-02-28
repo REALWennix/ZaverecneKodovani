@@ -6,8 +6,6 @@ Vue.component('content-component', {
     </section>
   `,
   style: `
-    /* Add your styles here */
-
     .content {
       position: relative;
     }
@@ -17,7 +15,7 @@ Vue.component('content-component', {
       top: 0;
       left: 0;
       width: 100%;
-      z-index: 1; /* Set a higher z-index */
+      z-index: 1;
     }
 
     .news {
@@ -25,9 +23,7 @@ Vue.component('content-component', {
       top: 100vh;
       left: 0;
       width: 100%;
-      z-index: 2; /* Set a lower z-index */
+      z-index: 2;
     }
-
-    /* Add styles for other components as needed */
   `,
 });
