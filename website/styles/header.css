@@ -15,11 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background: linear-gradient(
-    to bottom,
-    var(--primary-color),
-    rgba(1, 20, 60, 0.75)
-  );
+  background: var(--primary-color);
   padding: var(--header-padding);
   box-sizing: border-box;
   transition: padding var(--transition-duration) ease;
