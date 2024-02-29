@@ -2,7 +2,7 @@
 Vue.component('student-count', {
     data() {
         return {
-            liveStudentCount: 123, // Replace with real data
+            liveStudentCount: 123,
         };
     },
     template: `

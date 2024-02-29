@@ -1,6 +1,6 @@
 // dashboard.js
 Vue.component('dashboard', {
-    template: `
+  template: `
     <div class="dashboard">
       <h1>School Admin Panel</h1>
       <div class="card">
@@ -11,9 +11,4 @@ Vue.component('dashboard', {
       </div>
     </div>
   `,
-});
-
-new Vue({
-    el: '#app',
-    template: '<dashboard></dashboard>',
 });
